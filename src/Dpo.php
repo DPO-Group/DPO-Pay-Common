@@ -76,7 +76,7 @@ class Dpo
         $service = '';
 
         $serviceDate = date('Y/m/d H:i');
-        $serviceDesc = $data['serviceDescription'] ?? '';
+        $serviceDesc = $data['serviceDescription'] ?? 'General Service';
 
         $serviceType = $data['serviceType'];
         if (!str_contains($serviceType, '<Service>')) {
